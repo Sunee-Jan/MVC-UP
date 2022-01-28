@@ -1,0 +1,19 @@
+.mode4 > .colorful {
+  margin: 40px;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: skyblue;
+}
+.mode4 > .active {
+  animation: change 1s infinite alternate;
+}
+@keyframes change {
+  from {
+    background-color: skyblue;
+  }
+  to {
+    background-color: blue;
+  }
+}

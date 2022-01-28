@@ -1,0 +1,25 @@
+.mode2 {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.mode2 > div[class^="tab"] {
+  padding-left: 12px;
+  font-size: 1.6rem;
+  width: 50%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.mode2 > div[class^="content"] {
+  width: 100%;
+  height: calc(90%);
+  border: 1px solid green;
+}
+.mode2 > .style {
+  background-color: #eee;
+}
+.mode2 > .active {
+  display: none;
+}

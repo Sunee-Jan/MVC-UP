@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#global {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  border: 3px solid red;
+}
+#global > section {
+  width: 50%;
+  height: 50%;
+  border: 1px solid #ccc;
+}
+html {
+  font-size: 10px;
+}
+
+.mode1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.mode1 > .show {
+  border: 2px solid #ccc;
+  margin: 20px calc(10% / 2);
+  width: 90%;
+  height: 4rem;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  padding-left: 8px;
+}
+.mode1 > button[id] {
+  width: 15%;
+  height: 15%;
+  margin: 10px 5%;
+}
+
+.mode2 {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.mode2 > div[class^="tab"] {
+  padding-left: 12px;
+  font-size: 1.6rem;
+  width: 50%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.mode2 > div[class^="content"] {
+  width: 100%;
+  height: calc(90%);
+  border: 1px solid green;
+}
+.mode2 > .style {
+  background-color: #eee;
+}
+.mode2 > .active {
+  display: none;
+}
+
+.mode3 > .change {
+  width: 10vw;
+  height: 10vw;
+  border: 2px solid #ccc;
+  margin-top: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+.mode3 > .active {
+  background-color: #eee;
+  border-radius: 50%;
+  transform: translate(100%, 100%);
+}
+
+.mode4 > .colorful {
+  margin: 40px;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: skyblue;
+}
+.mode4 > .active {
+  animation: change 1s infinite alternate;
+}
+@keyframes change {
+  from {
+    background-color: skyblue;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+
+/*# sourceMappingURL=main.d87009c9.css.map */

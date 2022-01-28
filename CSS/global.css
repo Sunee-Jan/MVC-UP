@@ -1,0 +1,15 @@
+#global {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  border: 3px solid red;
+}
+#global > section {
+  width: 50%;
+  height: 50%;
+  border: 1px solid #ccc;
+}
+html {
+  font-size: 10px;
+}
